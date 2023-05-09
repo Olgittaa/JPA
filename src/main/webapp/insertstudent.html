@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Insert a new student</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>Insert a new student</div>
+
+<form action="insertservlet" method="POST">
+    <table>
+        <tbody>
+        <tr>
+            <td>First name:</td>
+            <td><input type="text" name="firstname" size="20"/></td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" name="lastname" size="30"/></td>
+        </tr>
+        <tr>
+            <td>Study direction:</td>
+            <td><input type="text" name="department" size="30"/></td>
+        </tr>
+        <tr>
+            <td>Grade:</td>
+            <td><input type="text" name="grade" size="4"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" name="submit" value="INSERT STUDENT"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

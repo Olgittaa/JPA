@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <persistence-unit name="default" >
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:/ais</jta-data-source>
+        <class>JavaBean</class>
+        <class>entities.Student</class>
+        <class>entities.Subject</class>
+        <class>entities.Teacher</class>
+        <class>entities.Marks</class>
+        <class>entities.CoursesList</class>
+        <class>dto.SubjectDTO</class>
+        <class>dto.SubjectMarksDTO</class>
+        <class>dto.StudentMarksDTO</class>
+        <properties>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+
+        </properties>
+    </persistence-unit>
+
+</persistence>
